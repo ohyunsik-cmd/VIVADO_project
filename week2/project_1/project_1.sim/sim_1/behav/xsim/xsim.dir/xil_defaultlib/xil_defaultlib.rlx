@@ -1,0 +1,12 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+E:/vivado/week2/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+E:/vivado/week2/project_1/project_1.srcs/sim_1/new/fulladder_tb.v,1725809273,verilog,,,,fulladder_tb,,,,,,,,
+E:/vivado/week2/project_1/project_1.srcs/sim_1/new/logic_gate_tb.v,1725804931,verilog,,,,logic_gate_tb,,,,,,,,
+E:/vivado/week2/project_1/project_1.srcs/sim_1/new/simulation.v,1725804284,verilog,,E:/vivado/week2/project_1/project_1.srcs/sources_1/new/week2_no3.v,,simulation,,,,,,,,
+E:/vivado/week2/project_1/project_1.srcs/sim_1/new/simulation1.v,1725804614,verilog,,,,simulation1,,,,,,,,
+E:/vivado/week2/project_1/project_1.srcs/sources_1/new/fulladder.v,1725808845,verilog,,E:/vivado/week2/project_1/project_1.srcs/sources_1/new/halfadder.v,,fulladder,,,,,,,,
+E:/vivado/week2/project_1/project_1.srcs/sources_1/new/halfadder.v,1725807290,verilog,,E:/vivado/week2/project_1/project_1.srcs/sim_1/new/fulladder_tb.v,,halfadder,,,,,,,,
+E:/vivado/week2/project_1/project_1.srcs/sources_1/new/logic_gate.v,1725798629,verilog,,E:/vivado/week2/project_1/project_1.srcs/sim_1/new/logic_gate_tb.v,,logic_gate,,,,,,,,

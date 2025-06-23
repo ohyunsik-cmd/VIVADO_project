@@ -1,0 +1,10 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+E:/vivado/week7/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+E:/vivado/week7/project_1/project_1.srcs/sim_1/new/logic_gate_one_tb.v,1728296092,verilog,,,,logic_gate_one_tb,,,,,,,,
+E:/vivado/week7/project_1/project_1.srcs/sim_1/new/logic_gate_two_tb.v,1728704711,verilog,,,,logic_gate_two_tb,,,,,,,,
+E:/vivado/week7/project_1/project_1.srcs/sources_1/new/logic_gate_one.v,1728295619,verilog,,E:/vivado/week7/project_1/project_1.srcs/sources_1/new/logic_gate_two.v,,logic_gate_one,,,,,,,,
+E:/vivado/week7/project_1/project_1.srcs/sources_1/new/logic_gate_two.v,1728704497,verilog,,E:/vivado/week7/project_1/project_1.srcs/sources_1/new/oneshot.v,,logic_gate_two,,,,,,,,
+E:/vivado/week7/project_1/project_1.srcs/sources_1/new/oneshot.v,1728704474,verilog,,E:/vivado/week7/project_1/project_1.srcs/sim_1/new/logic_gate_two_tb.v,,oneshot,,,,,,,,

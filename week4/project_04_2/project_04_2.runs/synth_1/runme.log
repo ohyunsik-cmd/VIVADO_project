@@ -1,0 +1,479 @@
+
+*** Running vivado
+    with args -log logic_gate_two.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source logic_gate_two.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source logic_gate_two.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/vivado/week4/project_04_2/project_04_2.srcs/utils_1/imports/synth_1/logic_gate.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/vivado/week4/project_04_2/project_04_2.srcs/utils_1/imports/synth_1/logic_gate.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top logic_gate_two -part xc7s75fgga484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: [Device 21-403] Loading part xc7s75fgga484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24220
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'logic_gate_two' [E:/vivado/week4/project_04_2/project_04_2.srcs/sources_1/new/logic_gate_two.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'logic_gate_two' (0#1) [E:/vivado/week4/project_04_2/project_04_2.srcs/sources_1/new/logic_gate_two.v:23]
+WARNING: [Synth 8-7129] Port a in module logic_gate_two is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1283.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc]
+WARNING: [Vivado 12-584] No ports matched 'out[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[2]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[3]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[4]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[5]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[6]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[7]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[2]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[2]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[7]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[6]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[5]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[4]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[3]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[2]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate.xdc]
+Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc]
+WARNING: [Vivado 12-584] No ports matched 'i0[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i0[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's0'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's1'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i0[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i0[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's0'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's1'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_four.xdc]
+Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_two.xdc]
+WARNING: [Vivado 12-584] No ports matched 'y[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_two.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_two.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_two.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_two.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_two.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_two.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/logic_gate_two_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/logic_gate_two_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc]
+WARNING: [Vivado 12-584] No ports matched 'S0'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S1'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S2'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S0'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S1'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S2'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[2]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[3]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[3]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[2]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Y[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_three.xdc]
+Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc]
+WARNING: [Vivado 12-584] No ports matched 'i0[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i0[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's0'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's1'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i3[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i0[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i0[0]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i1[1]'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's0'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's1'. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/vivado/week4/project_04_2/project_04_2.srcs/constrs_1/new/logic_gate_five.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1283.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s75fgga484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint E:/vivado/week4/project_04_2/project_04_2.srcs/utils_1/imports/synth_1/logic_gate.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 140 (col length:80)
+BRAMs: 180 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port a in module logic_gate_two is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     1|
+|3     |IBUF |     3|
+|4     |OBUF |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1283.316 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1283.316 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1283.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1283.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 86ed57d4
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 84 Warnings, 82 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1283.316 ; gain = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/vivado/week4/project_04_2/project_04_2.runs/synth_1/logic_gate_two.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file logic_gate_two_utilization_synth.rpt -pb logic_gate_two_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 23 15:04:42 2024...

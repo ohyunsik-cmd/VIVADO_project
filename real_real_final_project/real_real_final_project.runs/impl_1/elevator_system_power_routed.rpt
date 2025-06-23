@@ -1,0 +1,166 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date             : Sat Dec  7 16:02:44 2024
+| Host             : Neo_com running 64-bit major release  (build 9200)
+| Command          : report_power -file elevator_system_power_routed.rpt -pb elevator_system_power_summary_routed.pb -rpx elevator_system_power_routed.rpx
+| Design           : elevator_system
+| Device           : xc7s75fgga484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 25.717 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 25.350                           |
+| Device Static (W)        | 0.367                            |
+| Effective TJA (C/W)      | 2.7                              |
+| Max Ambient (C)          | 15.0                             |
+| Junction Temperature (C) | 95.0                             |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     3.095 |     1846 |       --- |             --- |
+|   LUT as Logic |     2.679 |      723 |     48000 |            1.51 |
+|   CARRY4       |     0.282 |      136 |     16000 |            0.85 |
+|   Register     |     0.114 |      591 |     96000 |            0.62 |
+|   BUFG         |     0.020 |        2 |        32 |            6.25 |
+|   Others       |     0.000 |       45 |       --- |             --- |
+| Signals        |     2.091 |     1318 |       --- |             --- |
+| I/O            |    20.164 |       63 |       338 |           18.64 |
+| Static Power   |     0.367 |          |           |                 |
+| Total          |    25.717 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     5.475 |       5.266 |      0.209 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.789 |       0.736 |      0.053 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     5.689 |       5.685 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.014 |       0.000 |      0.014 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 2.7                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.8                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------+-----------+
+| Name                          | Power (W) |
++-------------------------------+-----------+
+| elevator_system               |    25.350 |
+|   buzzer                      |     0.323 |
+|   call_deb                    |     0.123 |
+|   call_os                     |     0.020 |
+|   emergency_deb1              |     0.149 |
+|   emergency_deb2              |     0.137 |
+|   emergency_os1               |     0.007 |
+|   emergency_os2               |     0.010 |
+|   floor_debounce[0].floor_deb |     0.096 |
+|   floor_debounce[1].floor_deb |     0.098 |
+|   floor_debounce[2].floor_deb |     0.102 |
+|   floor_debounce[3].floor_deb |     0.101 |
+|   floor_debounce[4].floor_deb |     0.101 |
+|   floor_debounce[5].floor_deb |     0.098 |
+|   floor_debounce[6].floor_deb |     0.098 |
+|   floor_oneshot[0].floor_os   |     0.016 |
+|   floor_oneshot[1].floor_os   |     0.001 |
+|   floor_oneshot[3].floor_os   |     0.005 |
+|   floor_oneshot[5].floor_os   |     0.001 |
+|   lcd_ctrl                    |     2.168 |
+|   led_ctrl                    |     0.103 |
+|   seg_ctrl                    |     0.246 |
+|   start_deb1                  |     0.109 |
+|   start_deb2                  |     0.110 |
+|   start_os2                   |     0.002 |
++-------------------------------+-----------+
+
+
